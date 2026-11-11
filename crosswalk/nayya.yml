@@ -1,0 +1,38 @@
+provider: nayya
+apis_io: https://apis.io/providers/nayya/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  benefit_plan:
+    path_segment:
+    - benefits
+    properties:
+      id:
+      - id
+      - externalId
+      plan_type: type
+      name: displayName
+      description: description
+      created_at: createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/nayya-benefits-openapi.json#DELETE /employers/{employerId}/benefits/{benefitId}
+    - openapi/_original/nayya-benefits-openapi.json#GET /employers/{employerId}/benefits
+    - openapi/_original/nayya-benefits-openapi.json#GET /employers/{employerId}/benefits/{benefitId}
+    - openapi/_original/nayya-benefits-openapi.json#POST /employers/{employerId}/benefits
+  enrollment:
+    path_segment:
+    - enrollments
+    - enrollment
+    properties:
+      id:
+      - id
+      - employeeId
+      - dependentId
+      employee: memberId
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/nayya-benefits-openapi.json#DELETE /employers/{employerId}/enrollment
+    - openapi/_original/nayya-benefits-openapi.json#GET /employers/{employerId}/enrollments
+    - openapi/_original/nayya-benefits-openapi.json#POST /employers/{employerId}/enrollments
+    - openapi/_original/nayya-benefits-openapi.json#PUT /employers/{employerId}/enrollment

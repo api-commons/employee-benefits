@@ -1,0 +1,13 @@
+provider: sun-life
+apis_io: https://apis.io/providers/sun-life/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  enrollment:
+    path_segment:
+    - coverage
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/sun-life-dentaquest-fhir-patient-access-openapi.json#GET /Coverage
+    - openapi/_original/sun-life-dentaquest-fhir-patient-access-openapi.json#GET /Coverage/{id}

@@ -1,0 +1,25 @@
+provider: smart-pension
+apis_io: https://apis.io/providers/smart-pension/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  benefit_plan:
+    path_segment:
+    - benefits
+    properties:
+      id:
+      - id
+      - employee_id
+      plan_type:
+      - category
+      - benefit_type
+      description: description
+      created_at: created_at
+      status: state
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/smart-pension-keystone-openapi.json#GET /companies/{company_id}/employees/{employee_id}/benefits
+    - openapi/_original/smart-pension-keystone-openapi.json#GET /companies/{company_id}/employees/{employee_id}/benefits/{id}
+    - openapi/_original/smart-pension-keystone-openapi.json#POST /companies/{company_id}/employees/{employee_id}/benefits
+    - openapi/_original/smart-pension-keystone-openapi.yml#GET /companies/{company_id}/employees/{employee_id}/benefits
+    - openapi/_original/smart-pension-keystone-openapi.yml#GET /companies/{company_id}/employees/{employee_id}/benefits/{id}

@@ -1,0 +1,40 @@
+context: employee-benefits
+name: Employee Benefits
+intro: >-
+  The common benefits-administration vocabulary -- benefit plans, the employees' enrollments in them,
+  their dependents, and the deductions they create -- distilled from the APIs that already exist.
+tags: [Employee Benefits, Benefits Administration, Health Benefits, Retirement Plans, 401k, HSA, Group Insurance]
+envelope: [_links, _pagination, _results, data, success, errors, count, total, page, meta, links, result, results, value, next, previous, has_more, message, total_count, object]
+common_fields:
+  id: [uuid, guid, external_id, plan_id, enrollment_id, employee_id, dependent_id]
+  created_at: [created, created_date, create_time]
+  updated_at: [updated, modified_at, update_time]
+  status: [state]
+  name: [title, display_name, plan_name]
+  start_date: [effective_date, effective_start_date, coverage_start_date, start]
+  end_date: [effective_end_date, termination_date, coverage_end_date, end]
+concepts:
+  benefit_plan:
+    path: /benefit-plans
+    segments: [plans, plan, benefit_plans, benefits, benefit, offerings]
+    aliases:
+      plan_type: [type, benefit_type, category, line_of_coverage, coverage_type]
+      carrier: [carrier_name, provider, insurer]
+  enrollment:
+    segments: [enrollments, enrollment, elections, coverages, coverage]
+    aliases:
+      employee: [member_id, member, person_id]
+      coverage_level: [tier, coverage_tier]
+      employee_contribution: [employee_cost, employee_deduction, contribution]
+  # dependent was measured and dropped: 4 readable providers agree only on id and status.
+
+findings:
+  - >-
+    Benefit plans agree on id, plan_type, name and description: a plan is a typed offering (medical,
+    dental, 401k, HSA), and the type decides the rest of its shape.
+  - >-
+    Enrollments agree on id, employee and status; the effective start date reaches 44%.
+decisions:
+  - >-
+    start_date and end_date keep the benefits words for coverage dates (effective_date maps to start_date),
+    because coverage dates are calendar dates, not timestamps.

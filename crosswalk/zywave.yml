@@ -1,0 +1,14 @@
+provider: zywave
+apis_io: https://apis.io/providers/zywave/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  benefit_plan:
+    path_segment:
+    - plans
+    properties:
+      id: id
+      name: planName
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/zywave-bkb-v2-openapi.json#GET /bkb/v2.0/plans/{planId}

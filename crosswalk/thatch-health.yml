@@ -1,0 +1,21 @@
+provider: thatch-health
+apis_io: https://apis.io/providers/thatch-health/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  enrollment:
+    path_segment:
+    - enrollments
+    properties:
+      id:
+      - id
+      - plan_id
+      employee: member_id
+      status: status
+      plan_code: plan_code
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/thatch-health-partners-openapi.yml#GET /enrollments
+    - openapi/_original/thatch-health-partners-openapi.yml#GET /enrollments/{id}
+    - openapi/_original/thatch-health-platforms-openapi-original.yml#GET /enrollments
+    - openapi/_original/thatch-health-platforms-openapi-original.yml#GET /enrollments/{id}

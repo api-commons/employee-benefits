@@ -1,0 +1,344 @@
+[
+ {
+  "slug": "401go",
+  "specs": [
+   "openapi/_original/401go-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "adp",
+  "specs": [
+   "openapi/_original/adp-benefits-beneficiaries-v1-openapi.yml",
+   "openapi/_original/adp-benefits-dependents-v1-openapi.yml",
+   "openapi/_original/adp-benefits-external-plans-v1-openapi.yml",
+   "openapi/_original/adp-hcm-applicant-onboarding-v2-openapi.yml",
+   "openapi/_original/adp-hcm-validation-tables-v1-openapi.yml",
+   "openapi/_original/adp-hcm-wfn-codelists-v3-openapi.yml",
+   "openapi/_original/adp-hr-corporate-directory-v1-openapi.yml",
+   "openapi/_original/adp-hr-hr-work-assignment-management-v3-openapi.yml",
+   "openapi/_original/adp-hr-hr-worker-profiles-v1-openapi.yml",
+   "openapi/_original/adp-hr-personal-contacts-v2-openapi.yml",
+   "openapi/_original/adp-hr-worker-associate-profiles-v2-openapi.yml",
+   "openapi/_original/adp-hr-worker-demographics-v2-openapi.yml",
+   "openapi/_original/adp-hr-worker-leaves-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-biological-data-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-business-communication-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-compensation-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-custom-data-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-data-integration-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-demographic-data-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-identification-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-ksaoc-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-lifecycle-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-person-custom-data-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-personal-communication-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-work-assignment-management-v2-openapi.yml",
+   "openapi/_original/adp-hr-workers-work-deployment-management-v2-openapi.yml",
+   "openapi/_original/adp-payroll-deduction-configurations-v3-openapi.yml",
+   "openapi/_original/adp-payroll-general-ledger-documents-v1-openapi.yml",
+   "openapi/_original/adp-payroll-openapi.yml",
+   "openapi/_original/adp-payroll-pay-data-input-v1-openapi.yml",
+   "openapi/_original/adp-payroll-pay-distributions-v2-openapi.yml",
+   "openapi/_original/adp-payroll-pay-statements-v1-openapi.yml",
+   "openapi/_original/adp-payroll-payroll-group-pay-periods-v1-openapi.yml",
+   "openapi/_original/adp-payroll-payroll-outputs-v2-openapi.yml",
+   "openapi/_original/adp-payroll-tax-policy-eligibility-solutions-v1-openapi.yml",
+   "openapi/_original/adp-payroll-us-tax-profiles-v1-openapi.yml",
+   "openapi/_original/adp-payroll-us-tax-profiles-v2-openapi.yml",
+   "openapi/_original/adp-payroll-worker-payroll-instructions-v1-openapi.yml",
+   "openapi/_original/adp-staffing-job-applicants-v2-openapi.yml",
+   "openapi/_original/adp-staffing-job-applications-v2-openapi.yml",
+   "openapi/_original/adp-staffing-job-requisitions-v1-openapi.yml",
+   "openapi/_original/adp-staffing-recruiting-questionnaires-v3-openapi.yml",
+   "openapi/_original/adp-talent-associate-certifications-v2-openapi.yml",
+   "openapi/_original/adp-talent-associate-competencies-v2-openapi.yml",
+   "openapi/_original/adp-talent-associate-educational-degrees-v2-openapi.yml",
+   "openapi/_original/adp-talent-associate-languages-v2-openapi.yml",
+   "openapi/_original/adp-talent-associate-licenses-v2-openapi.yml",
+   "openapi/_original/adp-talent-associate-memberships-v2-openapi.yml",
+   "openapi/_original/adp-talent-associate-recognitions-v2-openapi.yml",
+   "openapi/_original/adp-time-data-collection-entries-v1-openapi.yml",
+   "openapi/_original/adp-time-labor-allocation-code-uploads-v2-openapi.yml",
+   "openapi/_original/adp-time-team-time-cards-v2-openapi.yml",
+   "openapi/_original/adp-time-time-card-inputs-v1-openapi.yml",
+   "openapi/_original/adp-time-time-cards-v2-openapi.yml",
+   "openapi/_original/adp-time-time-off-balances-v3-openapi.yml",
+   "openapi/_original/adp-time-time-off-requests-v2-openapi.yml",
+   "openapi/_original/adp-time-time-off-requests-v3-openapi.yml",
+   "openapi/_original/adp-time-work-schedule-entry-uploads-v2-openapi.yml",
+   "openapi/_original/adp-time-work-schedules-v1-openapi.yml",
+   "openapi/_original/adp-workers-openapi.yml"
+  ]
+ },
+ {
+  "slug": "arthur-j-gallagher",
+  "specs": [
+   "openapi/_original/gallagher-command-centre-api.yml"
+  ]
+ },
+ {
+  "slug": "buk",
+  "specs": [
+   "openapi/_original/buk-asistencia-api-openapi.json",
+   "openapi/_original/buk-asistencia-api-openapi.yml",
+   "openapi/_original/buk-attendance-biometrics-api-openapi.json",
+   "openapi/_original/buk-attendance-biometrics-api-openapi.yml",
+   "openapi/_original/buk-data-access-api-brasil-openapi.json",
+   "openapi/_original/buk-data-access-api-brasil-openapi.yml",
+   "openapi/_original/buk-data-access-api-chile-openapi.json",
+   "openapi/_original/buk-data-access-api-chile-openapi.yml",
+   "openapi/_original/buk-data-access-api-colombia-openapi.json",
+   "openapi/_original/buk-data-access-api-colombia-openapi.yml",
+   "openapi/_original/buk-data-access-api-mexico-openapi.json",
+   "openapi/_original/buk-data-access-api-mexico-openapi.yml",
+   "openapi/_original/buk-data-access-api-peru-openapi.json",
+   "openapi/_original/buk-data-access-api-peru-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cobee",
+  "specs": [
+   "openapi/_original/cobee-public-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "color",
+  "specs": [
+   "openapi/_original/color-external-api-v1-openapi.json",
+   "openapi/_original/color-external-api-v1-openapi.yml"
+  ]
+ },
+ {
+  "slug": "employment-hero",
+  "specs": [
+   "openapi/_original/employment-hero-openapi.yml",
+   "openapi/_original/employment-hero-payroll-au-swagger.json",
+   "openapi/_original/employment-hero-payroll-my-swagger.json",
+   "openapi/_original/employment-hero-payroll-nz-swagger.json",
+   "openapi/_original/employment-hero-payroll-sg-swagger.json",
+   "openapi/_original/employment-hero-payroll-uk-swagger.json"
+  ]
+ },
+ {
+  "slug": "finch",
+  "specs": [
+   "openapi/_original/finch-openapi.json"
+  ]
+ },
+ {
+  "slug": "garner-health",
+  "specs": [
+   "openapi/_original/garner-health-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "gusto",
+  "specs": [
+   "openapi/_original/gusto-openapi.yml"
+  ]
+ },
+ {
+  "slug": "justworks",
+  "specs": [
+   "openapi/_original/justworks-payroll-api-openapi.yml",
+   "openapi/_original/justworks-time-off-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kota",
+  "specs": [
+   "openapi/_original/kota-api-reference-openapi.json",
+   "openapi/_original/kota-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "leo",
+  "specs": [
+   "openapi/_original/leo-openapi.json"
+  ]
+ },
+ {
+  "slug": "lincoln-national",
+  "specs": [
+   "openapi/_original/lincoln-national-openapi.yml"
+  ]
+ },
+ {
+  "slug": "namely",
+  "specs": [
+   "openapi/_original/namely-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "nayya",
+  "specs": [
+   "openapi/_original/nayya-accounts-openapi.json",
+   "openapi/_original/nayya-benefits-openapi.json",
+   "openapi/_original/nayya-choose-openapi.json"
+  ]
+ },
+ {
+  "slug": "noyo",
+  "specs": [
+   "openapi/_original/noyo-carrier-openapi.json",
+   "openapi/_original/noyo-fulfillment-openapi.json",
+   "openapi/_original/noyo-tracking-openapi.json"
+  ]
+ },
+ {
+  "slug": "onpay",
+  "specs": [
+   "openapi/_original/onpay-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "onsi",
+  "specs": [
+   "openapi/_original/onsi-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "paychex-developer",
+  "specs": [
+   "openapi/_original/paychex-payroll-companies-openapi.yml",
+   "openapi/_original/paychex-time-openapi.yml",
+   "openapi/_original/paychex-workers-openapi.yml"
+  ]
+ },
+ {
+  "slug": "paylocity",
+  "specs": [
+   "openapi/_original/paylocity-openapi.yml"
+  ]
+ },
+ {
+  "slug": "plansource",
+  "specs": [
+   "openapi/_original/plansource-admin-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "remote-com",
+  "specs": [
+   "openapi/_original/remote-benefits-api-openapi.yml",
+   "openapi/_original/remote-companies-api-openapi.yml",
+   "openapi/_original/remote-contractors-api-openapi.yml",
+   "openapi/_original/remote-employments-api-openapi.yml",
+   "openapi/_original/remote-files-api-openapi.yml",
+   "openapi/_original/remote-oauth-api-openapi.yml",
+   "openapi/_original/remote-payroll-billing-api-openapi.yml",
+   "openapi/_original/remote-time-attendance-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "smart-pension",
+  "specs": [
+   "openapi/_original/smart-pension-keystone-openapi.json",
+   "openapi/_original/smart-pension-keystone-openapi.yml"
+  ]
+ },
+ {
+  "slug": "soda-health",
+  "specs": [
+   "openapi/_original/soda-health-docs-portal-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "sun-life",
+  "specs": [
+   "openapi/_original/sun-life-dentaquest-fhir-metadata-openapi.json",
+   "openapi/_original/sun-life-dentaquest-fhir-patient-access-openapi.json",
+   "openapi/_original/sun-life-dentaquest-fhir-provider-directory-openapi.json"
+  ]
+ },
+ {
+  "slug": "thatch",
+  "specs": [
+   "openapi/_original/thatch-partners-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thatch-health",
+  "specs": [
+   "openapi/_original/thatch-health-partners-openapi.yml",
+   "openapi/_original/thatch-health-platforms-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "towers-watson",
+  "specs": [
+   "openapi/_original/wtw-hr-portal-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ukg-pro",
+  "specs": [
+   "openapi/_original/ukg-pro-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ukg-ready",
+  "specs": [
+   "openapi/_original/ukg-ready-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unum",
+  "specs": [
+   "openapi/_original/unum-hr-connect-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wagestream",
+  "specs": [
+   "openapi/_original/wagestream-integrations-api-openapi.json",
+   "openapi/_original/wagestream-integrations-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wellhub",
+  "specs": [
+   "openapi/_original/wellhub-integrations-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "workday-benefits",
+  "specs": [
+   "openapi/_original/workday-benefits-benefit-enrollment-event-offerings-changelog.json",
+   "openapi/_original/workday-benefits-benefit-enrollment-event-offerings-changelog_2.json",
+   "openapi/_original/workday-benefits-benefit-enrollment-event-offerings-openapi.json",
+   "openapi/_original/workday-benefits-benefit-enrollment-event-offerings-v1-openapi.json",
+   "openapi/_original/workday-benefits-benefit-partner-changelog.json",
+   "openapi/_original/workday-benefits-benefit-partner-changelog_2.json",
+   "openapi/_original/workday-benefits-benefit-partner-openapi.json",
+   "openapi/_original/workday-benefits-benefit-partner-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "yuzu-health",
+  "specs": [
+   "openapi/_original/yuzu-health-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "zywave",
+  "specs": [
+   "openapi/_original/zywave-accounts-v2-openapi.json",
+   "openapi/_original/zywave-accounts-v3-openapi.json",
+   "openapi/_original/zywave-agencies-v2-openapi.json",
+   "openapi/_original/zywave-bkb-v2-openapi.json",
+   "openapi/_original/zywave-carriers-v2-openapi.json",
+   "openapi/_original/zywave-client-engagement-v3-openapi.json",
+   "openapi/_original/zywave-commercial-policy-benchmark-v2-openapi.json",
+   "openapi/_original/zywave-content-v2-openapi.json",
+   "openapi/_original/zywave-industries-v3-openapi.json",
+   "openapi/_original/zywave-lead-insights-v3-openapi.json",
+   "openapi/_original/zywave-licenses-v2-openapi.json",
+   "openapi/_original/zywave-organizations-v3-openapi.json",
+   "openapi/_original/zywave-plans-v2-openapi.json",
+   "openapi/_original/zywave-policies-v2-openapi.json",
+   "openapi/_original/zywave-profiles-v2-1-openapi.json"
+  ]
+ }
+]

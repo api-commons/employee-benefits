@@ -1,0 +1,22 @@
+provider: employment-hero
+apis_io: https://apis.io/providers/employment-hero/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  benefit_plan:
+    path_segment:
+    - benefit
+    - plan
+    - benefits
+    properties:
+      id:
+      - employeeId
+      - id
+      plan_type: benefitType
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/employee/{employeeId}/benefit
+    - openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/employee/{employeeId}/benefit/{benefitCategoryId}
+    - openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/payrun/{payRunId}/benefits
+    - openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/payrun/{payRunId}/benefits/{employeeId}
+    - openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/pensionscheme/{schemeId}/plan

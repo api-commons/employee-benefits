@@ -1,0 +1,17 @@
+provider: buk
+apis_io: https://apis.io/providers/buk/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  benefit_plan:
+    path_segment:
+    - plans
+    properties:
+      start_date: start_date
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#GET /employees/{employee_id}/plans/{id}
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#GET /employees/{id}/plans
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#PATCH /employees/{employee_id}/plans/{id}
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#POST /employees/{id}/plans
+    - openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /employees/{employee_id}/plans/{id}

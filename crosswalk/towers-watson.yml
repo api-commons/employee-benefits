@@ -1,0 +1,16 @@
+provider: towers-watson
+apis_io: https://apis.io/providers/towers-watson/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  benefit_plan:
+    path_segment:
+    - benefits
+    properties:
+      plan_type: planType
+      name: planName
+      start_date: effectiveDate
+      status: status
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/wtw-hr-portal-openapi.yml#GET /employees/{employeeId}/benefits

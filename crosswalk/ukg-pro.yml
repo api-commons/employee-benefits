@@ -1,0 +1,14 @@
+provider: ukg-pro
+apis_io: https://apis.io/providers/ukg-pro/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  enrollment:
+    path_segment:
+    - elections
+    properties:
+      id: employeeId
+      start_date: effectiveDate
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/ukg-pro-openapi.yml#GET /benefits/v1/elections

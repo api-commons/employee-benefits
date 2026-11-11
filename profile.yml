@@ -1,0 +1,291 @@
+context: employee-benefits
+name: Employee Benefits
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Employee Benefits
+  - Benefits Administration
+  - Health Benefits
+  - Retirement Plans
+  - 401k
+  - HSA
+  - Group Insurance
+  providers_with_harvested_openapi: 37
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  benefit_plan:
+    segments_seen:
+      plans: 6
+      benefits: 6
+      plan: 2
+      benefit: 1
+    providers_exposing: 10
+    providers_with_readable_schema: 10
+    operations:
+    - operation: GET collection
+      providers: 9
+      share: 0.9
+      tier: core
+    - operation: GET item
+      providers: 9
+      share: 0.9
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.5
+      tier: core
+    - operation: DELETE item
+      providers: 2
+      share: 0.2
+      tier: long-tail
+    - operation: POST item
+      providers: 2
+      share: 0.2
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.2
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.1
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 8
+      share: 0.8
+      type: string
+      spellings:
+      - id
+      - employeeId
+      - externalId
+      - employee_id
+    - name: plan_type
+      tier: core
+      providers: 7
+      share: 0.7
+      type: string
+      spellings:
+      - type
+      - benefitType
+      - line_of_coverage
+      - plan_type
+      - category
+      - benefit_type
+      - planType
+    - name: name
+      tier: core
+      providers: 6
+      share: 0.6
+      type: string
+      spellings:
+      - name
+      - planName
+      - displayName
+    - name: description
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - description
+    - name: start_date
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: string
+      spellings:
+      - start_date
+      - effective_start_date
+      - effectiveDate
+    - name: created_at
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - createdAt
+      - created
+      - created_at
+    - name: status
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - status
+      - state
+    long_tail_count: 220
+    long_tail_sample:
+    - amount
+    - carrier
+    - carrier_id
+    - code
+    - employee_contribution
+    - employer_contribution
+    - end_date
+    - tiers
+    - updated_at
+    - accai
+    - account_id
+    - active_at
+    - additional_amount_payrolled_to_date_in_pay_runs
+    - additional_has_finalised_pay_runs
+    - additional_has_linked_pay_runs
+    - admin_user_id
+    - afc
+    - afc_account_number
+    - afc_amount
+    - afc_currency
+    - afp_collector
+    - amount_cents
+    - amount_currency
+    - amount_foregone
+    - amount_made_good
+    - amount_payrolled_to_date
+    - amount_payrolled_to_date_in_pay_runs
+    - amount_to_be_payrolled_per_period
+    - apartment_interest_rate
+    - apv
+    - apv2_account_number
+    - apv2_company
+    - apv2_currency
+    - apv2_plan
+    - apv_currency
+    - apv_plan
+    - available_from
+    - available_to
+    - b64_attachments
+    - bank_account_detail
+  enrollment:
+    segments_seen:
+      enrollments: 4
+      coverage: 3
+      enrollment: 2
+      coverages: 2
+      elections: 2
+    providers_exposing: 10
+    providers_with_readable_schema: 9
+    operations:
+    - operation: GET collection
+      providers: 8
+      share: 0.8
+      tier: core
+    - operation: GET item
+      providers: 6
+      share: 0.6
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.5
+      tier: core
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.2
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.1
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.1
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 7
+      share: 0.778
+      type: string
+      spellings:
+      - id
+      - plan_id
+      - employeeId
+      - dependentId
+      - dependent_id
+      - employee_id
+      - planId
+    - name: employee
+      tier: core
+      providers: 5
+      share: 0.556
+      type: string
+      spellings:
+      - memberId
+      - member_id
+      - member
+    - name: status
+      tier: core
+      providers: 5
+      share: 0.556
+      type: string
+      spellings:
+      - status
+      - state
+    - name: start_date
+      tier: extended
+      providers: 4
+      share: 0.444
+      type: string
+      spellings:
+      - effectiveDate
+      - startDate
+    - name: plan_code
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: string
+      spellings:
+      - plan_code
+      - planCode
+    long_tail_count: 153
+    long_tail_sample:
+    - broker
+    - coverage_level
+    - coverage_types
+    - election_id
+    - end_date
+    - enrollment_coverages
+    - group_id
+    - plan
+    - premium
+    - status_events
+    - subscriber_id
+    - action
+    - alternate_id
+    - bank_account_number
+    - bank_name
+    - bank_sort_code
+    - begins_at
+    - beneficiary_esign_at
+    - beneficiary_esign_by
+    - beneficiary_optional_admin
+    - beneficiary_required
+    - benefit
+    - benefit_amount
+    - benefit_amount_cents
+    - benefit_class
+    - benefit_id
+    - benefit_lookup_code
+    - benefit_type
+    - billing_fee
+    - billing_fee2
+    - billing_premium
+    - bookkeeping_values
+    - carrier_effective_date
+    - carrier_question_type
+    - change_effective_date
+    - cost_org_base_amount
+    - cost_org_match_amount
+    - coverage_amount
+    - coverage_id
+    - coverage_level_id

@@ -1,0 +1,1244 @@
+{
+ "cohort_size": 37,
+ "unreadable": [],
+ "concepts": {
+  "benefit_plan": {
+   "buk": {
+    "segments": [
+     "plans"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "start_date": "string",
+     "health_company": "string",
+     "health_plan_identifier": "string",
+     "complementary_insurance_company": "string",
+     "pension_scheme": "string",
+     "fund_quote": "string",
+     "health_company_plan": "number",
+     "health_company_plan_currency": "number",
+     "health_company_plan_percentage": "number",
+     "disability": "boolean",
+     "disability_start_date": "string",
+     "invalidity": "string",
+     "invalidity_start_date": "string",
+     "afc": "string",
+     "afp_collector": "string",
+     "start_date_quotation_afc": "string",
+     "youth_employment_subsidy": "boolean",
+     "retired": "boolean",
+     "retirement_regime": "number",
+     "fun": "number",
+     "ips_rate": "number",
+     "foreign_technician": "boolean",
+     "quote_increase_one_percent": "boolean",
+     "regimen": "string",
+     "accai": "string",
+     "pension_fund": "string",
+     "unemployment_insurance_company": "string",
+     "health_company_prepaid": "string",
+     "health_company_prepaid_currency": "string",
+     "health_company_prepaid_plan": "string",
+     "pac_company": "string",
+     "pac_currency": "string",
+     "pac_plan": "number",
+     "apv": "string",
+     "apv_currency": "string",
+     "apv_plan": "number",
+     "apv2_company": "string",
+     "apv2_account_number": "string",
+     "apv2_currency": "string",
+     "apv2_plan": "number",
+     "contributor_subtype": "string",
+     "pension_protected": "boolean",
+     "afc_account_number": "string",
+     "afc_currency": "string",
+     "afc_amount": "number",
+     "dependant_deduction": "string",
+     "apartment_interest_rate": "string",
+     "pagination": "object",
+     "data": "array",
+     "unemployment_insurance_account": "string",
+     "unemployment_insurance_currency": "string",
+     "unemployment_insurance_interbank_account": "string",
+     "unemployment_insurance_company_bank_id": "integer",
+     "health_company_currency": "number",
+     "health_company_plan_value": "number",
+     "pension_fund_type": "string",
+     "family_allowance": "boolean",
+     "cuspp_code": "string"
+    },
+    "evidence": [
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#GET /employees/{employee_id}/plans/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#GET /employees/{id}/plans",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#PATCH /employees/{employee_id}/plans/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#POST /employees/{id}/plans",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /employees/{employee_id}/plans/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /employees/{id}/plans",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#PATCH /employees/{employee_id}/plans/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#POST /employees/{id}/plans",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#GET /employees/{employee_id}/plans/{id}",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#GET /employees/{id}/plans",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#PATCH /employees/{employee_id}/plans/{id}",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#POST /employees/{id}/plans"
+    ]
+   },
+   "employment-hero": {
+    "segments": [
+     "benefit",
+     "plan",
+     "benefits"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "benefitCategoryId": "integer",
+     "employeeId": "integer",
+     "employeeName": "string",
+     "carryBenefitForward": "boolean",
+     "amountForegone": "number",
+     "amountMadeGood": "number",
+     "cashEquivalent": "number",
+     "startFromPeriod": "integer",
+     "amountPayrolledToDate": "number",
+     "amountToBePayrolledPerPeriod": "number",
+     "amountPayrolledToDateInPayRuns": "number",
+     "hasLinkedPayRuns": "boolean",
+     "hasFinalisedPayRuns": "boolean",
+     "hasBeenSubmitted": "boolean",
+     "additionalAmountPayrolledToDateInPayRuns": "number",
+     "additionalHasLinkedPayRuns": "boolean",
+     "additionalHasFinalisedPayRuns": "boolean",
+     "dateCreatedUtc": "string",
+     "id": "integer",
+     "benefitCategoryName": "string",
+     "benefitCategoryType": "string",
+     "benefitCategorySubType": "string",
+     "payrollingBenefit": "boolean",
+     "year": "integer",
+     "calculationLogs": "array",
+     "proRataCalculation": "object",
+     "car": "object",
+     "van": "object",
+     "loan": "object",
+     "benefitType": "string",
+     "benefitName": "string",
+     "amount": "number",
+     "isFirstTimePayrolled": "boolean",
+     "contributionGroupName": "string",
+     "contributionGroupId": "string",
+     "contributionPlanName": "string",
+     "calculateOnQualifyingEarnings": "boolean",
+     "pensionType": "string",
+     "employeeContribution": "number",
+     "employerContribution": "number",
+     "salarySacrifice": "number",
+     "reportingFrequency": "string",
+     "pensionSchemeId": "integer",
+     "maxEarningsThreshold": "number",
+     "minEarningsThreshold": "number",
+     "salarySacrificeDeductionCategoryId": "integer",
+     "nicSavingRebate": "number",
+     "isAutoEnrolmentScheme": "boolean",
+     "lowerEarningsDisregard": "number",
+     "lowerDefaultEarningsDisregardType": "string",
+     "upperEarningsCap": "number",
+     "upperDefaultEarningsCapType": "string",
+     "pensionSchemeContributionPlanPostponementRules": "array",
+     "collectionSourceId": "string",
+     "useTaxMonthPayPeriod": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/employee/{employeeId}/benefit",
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/employee/{employeeId}/benefit/{benefitCategoryId}",
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/payrun/{payRunId}/benefits",
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/payrun/{payRunId}/benefits/{employeeId}",
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/pensionscheme/{schemeId}/plan",
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/business/{businessId}/pensionscheme/{schemeId}/plan/{planId}",
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#POST /api/v2/business/{businessId}/employee/{employeeId}/benefit",
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#POST /api/v2/business/{businessId}/pensionscheme/{schemeId}/plan",
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#PUT /api/v2/business/{businessId}/employee/{employeeId}/benefit",
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#PUT /api/v2/business/{businessId}/pensionscheme/{schemeId}/plan/{planId}"
+    ]
+   },
+   "finch": {
+    "segments": [
+     "benefits",
+     "plans"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "benefit_id": "string",
+     "type": "string",
+     "description": "string",
+     "frequency": "string",
+     "company_contribution": "object",
+     "job_id": "string",
+     "id": "string",
+     "name": "string",
+     "network_type": "string",
+     "carrier": "object",
+     "start_date": "string",
+     "end_date": "string",
+     "coverage_tiers": "array",
+     "deduction_codes": "array"
+    },
+    "evidence": [
+     "openapi/_original/finch-openapi.json#GET /employer/benefits",
+     "openapi/_original/finch-openapi.json#GET /employer/benefits/{benefit_id}",
+     "openapi/_original/finch-openapi.json#GET /employer/plans",
+     "openapi/_original/finch-openapi.json#GET /employer/plans/{plan_id}",
+     "openapi/_original/finch-openapi.json#POST /employer/benefits",
+     "openapi/_original/finch-openapi.json#POST /employer/benefits/{benefit_id}"
+    ]
+   },
+   "kota": {
+    "segments": [
+     "plans"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "object": "string",
+     "id": "string",
+     "type": "string",
+     "name": "string",
+     "description": "string",
+     "country": "string",
+     "provider": "object",
+     "documents": "array",
+     "employer_eligibility_criteria": "array",
+     "employee_eligibility_criteria": "array",
+     "health_insurance": "object",
+     "disclosures": "array",
+     "available_from": "string",
+     "available_to": [
+      "string",
+      "null"
+     ],
+     "coverage_options": [
+      "array",
+      "null"
+     ],
+     "eligible_count": [
+      "integer",
+      "null"
+     ],
+     "ineligible_count": [
+      "integer",
+      "null"
+     ],
+     "total_count": [
+      "integer",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/kota-api-reference-openapi.json#GET /plans",
+     "openapi/_original/kota-api-reference-openapi.json#GET /plans/{plan_id}",
+     "openapi/_original/kota-openapi-original.json#GET /plans",
+     "openapi/_original/kota-openapi-original.json#GET /plans/{plan_id}"
+    ]
+   },
+   "nayya": {
+    "segments": [
+     "benefits"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "employerId": "string",
+     "externalId": "string",
+     "externalCarrierName": "string",
+     "carrierId": "string",
+     "type": "string",
+     "displayName": "string",
+     "description": "string",
+     "activeAt": "string",
+     "inactiveAt": "string",
+     "detailsUrl": "string",
+     "code": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "features": "array",
+     "tiers": "array",
+     "thresholds": "array",
+     "benefitDependencies": "array"
+    },
+    "evidence": [
+     "openapi/_original/nayya-benefits-openapi.json#DELETE /employers/{employerId}/benefits/{benefitId}",
+     "openapi/_original/nayya-benefits-openapi.json#GET /employers/{employerId}/benefits",
+     "openapi/_original/nayya-benefits-openapi.json#GET /employers/{employerId}/benefits/{benefitId}",
+     "openapi/_original/nayya-benefits-openapi.json#POST /employers/{employerId}/benefits"
+    ]
+   },
+   "noyo": {
+    "segments": [
+     "plans"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "benefits": null,
+     "carrier_id": "string",
+     "cobra_rules": null,
+     "code": "string",
+     "created": "integer",
+     "dependent_child_age_limits": "array",
+     "effective_end_date": "string",
+     "effective_start_date": "string",
+     "eligible_member_types": "array",
+     "group_enrollment_id": "string",
+     "id": "string",
+     "line_of_coverage": "string",
+     "modified": "integer",
+     "name": "string",
+     "network": "string",
+     "plan_configuration": "object",
+     "plan_type": "string",
+     "status": "string",
+     "termination_policy": "string",
+     "version": "string",
+     "voluntary": "boolean",
+     "waiting_periods": "array",
+     "meta": null,
+     "response": "array",
+     "plan": "object"
+    },
+    "evidence": [
+     "openapi/_original/noyo-fulfillment-openapi.json#GET /api/v1/group_enrollments/{enrollment_id}/plans",
+     "openapi/_original/noyo-fulfillment-openapi.json#GET /api/v1/groups/{group_id}/plans",
+     "openapi/_original/noyo-fulfillment-openapi.json#GET /api/v1/plans/{plan_id}"
+    ]
+   },
+   "smart-pension": {
+    "segments": [
+     "benefits"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "admin_user_id": "integer",
+     "amount": "number",
+     "amount_currency": "string",
+     "cancelled_at": "string",
+     "category": "string",
+     "benefit_type": "string",
+     "withdrawal_type": "string",
+     "description": "string",
+     "employee_id": "integer",
+     "benefit_rule_set_id": "integer",
+     "state": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "completed_at": "string",
+     "receiving_contract_reference": "string",
+     "withdrawal_application_state": "string",
+     "id_verification_state": "string",
+     "payment_state": "string",
+     "request_mode": "string",
+     "bank_account_detail": "object",
+     "benefit_check_results": "array",
+     "employee": "object",
+     "limit": "integer",
+     "offset": "integer",
+     "total": "integer",
+     "links": "array",
+     "benefits": "array",
+     "requested_benefit_amount": null,
+     "benefit_evidence_uploads_attributes": "object",
+     "is_mobile": "boolean",
+     "benefit_subaccount_splits": "array",
+     "currency": "string",
+     "scheme_currency": "string"
+    },
+    "evidence": [
+     "openapi/_original/smart-pension-keystone-openapi.json#GET /companies/{company_id}/employees/{employee_id}/benefits",
+     "openapi/_original/smart-pension-keystone-openapi.json#GET /companies/{company_id}/employees/{employee_id}/benefits/{id}",
+     "openapi/_original/smart-pension-keystone-openapi.json#POST /companies/{company_id}/employees/{employee_id}/benefits",
+     "openapi/_original/smart-pension-keystone-openapi.yml#GET /companies/{company_id}/employees/{employee_id}/benefits",
+     "openapi/_original/smart-pension-keystone-openapi.yml#GET /companies/{company_id}/employees/{employee_id}/benefits/{id}",
+     "openapi/_original/smart-pension-keystone-openapi.yml#POST /companies/{company_id}/employees/{employee_id}/benefits"
+    ]
+   },
+   "towers-watson": {
+    "segments": [
+     "benefits"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "planType": "string",
+     "planName": "string",
+     "status": "string",
+     "coverageLevel": "string",
+     "employeeContribution": "number",
+     "employerContribution": "number",
+     "effectiveDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/wtw-hr-portal-openapi.yml#GET /employees/{employeeId}/benefits"
+    ]
+   },
+   "yuzu-health": {
+    "segments": [
+     "plan",
+     "plans",
+     "benefits"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "amountCents": "integer",
+     "groupPolicyId": "string",
+     "vendorId": "string",
+     "incurredDate": "string",
+     "paidDate": "string",
+     "description": "string",
+     "b64Attachments": "array",
+     "isStoplossEligible": "boolean",
+     "tiers": "array",
+     "rx": "object",
+     "medical": "object",
+     "exclusions": "array"
+    },
+    "evidence": [
+     "openapi/_original/yuzu-health-openapi-original.json#DELETE /v1/plans/{planId}",
+     "openapi/_original/yuzu-health-openapi-original.json#GET /v1/claims/plan",
+     "openapi/_original/yuzu-health-openapi-original.json#GET /v1/claims/plan/{planClaimId}",
+     "openapi/_original/yuzu-health-openapi-original.json#GET /v2/designs/{planDesignId}/benefits",
+     "openapi/_original/yuzu-health-openapi-original.json#POST /v1/claims/plan/{planId}"
+    ]
+   },
+   "zywave": {
+    "segments": [
+     "plans"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "accountId": "integer",
+     "billingCarrierId": "integer",
+     "isPlanAtRisk": "boolean",
+     "isDeleted": "boolean",
+     "issuingCarrierId": "integer",
+     "billingCarrierCodeId": "integer",
+     "issuingCarrierCodeId": "integer",
+     "planCode": "string",
+     "planTypeId": "integer",
+     "expectedCommission": "number",
+     "expectedPremium": "number",
+     "basePlanTypeId": "integer",
+     "billingModeId": "integer",
+     "carrierPolicyNumber": "string",
+     "commissionProducerId": "integer",
+     "commissionRate": "number",
+     "commissionScheduleId": "integer",
+     "commissionType": null,
+     "createdById": "integer",
+     "currentSubscribers": "integer",
+     "customerServiceRepId": "integer",
+     "customFields": "array",
+     "departmentId": "integer",
+     "firstWrittenDate": "string",
+     "lastUpdatedDate": "string",
+     "lostEffectiveDate": "string",
+     "notes": "string",
+     "planYearStartDate": "string",
+     "planYearEndDate": "string",
+     "payModeId": "integer",
+     "planName": "string",
+     "beginningPolicyStatusId": "integer",
+     "endingPolicyStatusId": "integer",
+     "rateType": null,
+     "renewedFromPlanId": "integer",
+     "syncPlan": "boolean",
+     "id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/zywave-bkb-v2-openapi.json#GET /bkb/v2.0/plans/{planId}"
+    ]
+   }
+  },
+  "enrollment": {
+   "lincoln-national": {
+    "segments": [
+     "enrollment"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "benefitType": "string",
+     "coverageAmount": "number",
+     "effectiveDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/lincoln-national-openapi.yml#POST /enrollment"
+    ]
+   },
+   "nayya": {
+    "segments": [
+     "enrollments",
+     "enrollment"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "id": "string",
+     "benefitId": "string",
+     "benefit": null,
+     "employeeId": "string",
+     "dependentId": "object",
+     "benefitAmountCents": "object",
+     "rateAmountCents": "object",
+     "beginsAt": "string",
+     "endsAt": "object",
+     "groupNumber": "object",
+     "memberId": "object",
+     "deductiblePayerCode": "string",
+     "externalRelationship": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "employeeExternalId": "string"
+    },
+    "evidence": [
+     "openapi/_original/nayya-benefits-openapi.json#DELETE /employers/{employerId}/enrollment",
+     "openapi/_original/nayya-benefits-openapi.json#GET /employers/{employerId}/enrollments",
+     "openapi/_original/nayya-benefits-openapi.json#POST /employers/{employerId}/enrollments",
+     "openapi/_original/nayya-benefits-openapi.json#PUT /employers/{employerId}/enrollment"
+    ]
+   },
+   "plansource": {
+    "segments": [
+     "coverage",
+     "coverages"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "status": "string",
+     "errors": "array",
+     "data": "array",
+     "coverages": "array",
+     "id": "integer",
+     "org_benefit_id": "integer",
+     "coverage_level_id": "integer",
+     "termination_reason_id": "integer",
+     "original_effective_date": "string",
+     "change_effective_date": "string",
+     "payment_change_effective_date": "string",
+     "termination_date": "string",
+     "pcpcode1": "string",
+     "pcpcode2": "string",
+     "org_plan_id": "integer",
+     "subscriber_id": "integer",
+     "subscriber_premium": "string",
+     "org_premium": "string",
+     "volume": "string",
+     "org_fsa_amount": "string",
+     "subscriber_fsa_amount": "string",
+     "increments": "integer",
+     "billing_premium": "string",
+     "billing_fee": "string",
+     "billing_fee2": "string",
+     "pcp_name1": "string",
+     "had_prior_coverage": "boolean",
+     "pcp_existing_patient1": "string",
+     "imputed_income": "string",
+     "req_volume": "string",
+     "req_increments": "string",
+     "req_subscriber_premium": "string",
+     "req_org_premium": "string",
+     "req_billing_premium": "string",
+     "req_billing_fee": "string",
+     "req_billing_fee2": "string",
+     "gi_volume": "string",
+     "gi_increments": "string",
+     "waiting_for_eoi": "boolean",
+     "req_imputed_income": "string",
+     "dp_sub_imputed_income": "string",
+     "dp_org_imputed_income": "string",
+     "req_dp_sub_imputed_income": "string",
+     "req_dp_org_imputed_income": "string",
+     "election_effective_date": "string",
+     "udef_1": "string",
+     "subscriber_election_amount": "string",
+     "subscriber_pretax_premium": "string",
+     "subscriber_posttax_premium": "string",
+     "carrier_effective_date": "string",
+     "demographic_effective_date": "string",
+     "signature_date": "string",
+     "req_org_plan_id": "integer",
+     "req_coverage_level_id": "integer",
+     "req_dependent_ids": "array",
+     "req_subscriber_election_amount": "string",
+     "req_subscriber_fsa_amount": "string",
+     "req_org_fsa_amount": "string",
+     "gi_org_plan_id": "integer",
+     "gi_coverage_level_id": "integer",
+     "gi_dependent_ids": "array",
+     "gi_subscriber_election_amount": "string",
+     "esigned_at": "string",
+     "esigned_by": "string",
+     "waive_plan_policyholder": "string",
+     "waive_plan_insurer": "string",
+     "waive_plan_insurer_phone": "string",
+     "waive_plan_effective_date": "string",
+     "waive_plan_termination_date": "string",
+     "beneficiary_esign_at": "string",
+     "beneficiary_esign_by": "string",
+     "subscriber_ytd": "string",
+     "org_ytd": "string",
+     "subscriber_ytd_effective_date": "string",
+     "org_ytd_effective_date": "string",
+     "deny_pend_permanently_amount": "string",
+     "waiting_for_doc_requests": "boolean",
+     "hsa_contribution_end_date": "string",
+     "req_hsa_contribution_end_date": "string",
+     "bookkeeping_values": "array",
+     "cost_org_base_amount": "integer",
+     "cost_org_match_amount": "integer",
+     "org_annual_base_amount": "integer",
+     "org_annual_match_amount": "integer",
+     "org_benefit_name": "string",
+     "benefit_lookup_code": "string",
+     "coverage_level_name": "string",
+     "plan_year_starts_on": "string",
+     "plan_year_ends_on": "string",
+     "coverage_type_name": "string",
+     "benefit_class": "string",
+     "beneficiary_required": "string",
+     "beneficiary_optional_admin": "boolean",
+     "org_plan_name": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "req_org_plan_name": "string",
+     "req_coverage_level_name": "string",
+     "survey_data": "array",
+     "coverage_id": "integer",
+     "survey_benefit_name": "string",
+     "question_response_data": "array",
+     "plan_id": "string",
+     "question_text": "string",
+     "subscriber_ssn": "string",
+     "dependent_ssn": "string",
+     "dependent_id": "integer",
+     "question_response": "array",
+     "response_text": "string",
+     "value": "string",
+     "time_answered": "string",
+     "question_targeted_at": "string",
+     "carrier_question_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/plansource-admin-api-openapi-original.json#GET /coverage/{coverage_id}",
+     "openapi/_original/plansource-admin-api-openapi-original.json#GET /coverages",
+     "openapi/_original/plansource-admin-api-openapi-original.json#POST /coverage",
+     "openapi/_original/plansource-admin-api-openapi-original.json#POST /coverages",
+     "openapi/_original/plansource-admin-api-openapi-original.json#PUT /coverage/{coverage_id}",
+     "openapi/_original/plansource-admin-api-openapi-original.json#PUT /coverages"
+    ]
+   },
+   "sun-life": {
+    "segments": [
+     "coverage"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/sun-life-dentaquest-fhir-patient-access-openapi.json#GET /Coverage",
+     "openapi/_original/sun-life-dentaquest-fhir-patient-access-openapi.json#GET /Coverage/{id}"
+    ]
+   },
+   "thatch": {
+    "segments": [
+     "enrollments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "member_id": "string",
+     "coverage_types": "array",
+     "status": "string",
+     "status_events": "array",
+     "plan": "object",
+     "plan_id": "string",
+     "plan_code": "string",
+     "premium": "object",
+     "broker": "object",
+     "enrollment_coverages": "array"
+    },
+    "evidence": [
+     "openapi/_original/thatch-partners-openapi.yml#GET /enrollments",
+     "openapi/_original/thatch-partners-openapi.yml#GET /enrollments/{id}"
+    ]
+   },
+   "thatch-health": {
+    "segments": [
+     "enrollments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "member_id": "string",
+     "coverage_types": "array",
+     "status": "string",
+     "status_events": "array",
+     "plan": "object",
+     "plan_id": "string",
+     "plan_code": "string",
+     "premium": "object",
+     "broker": "object",
+     "enrollment_coverages": "array"
+    },
+    "evidence": [
+     "openapi/_original/thatch-health-partners-openapi.yml#GET /enrollments",
+     "openapi/_original/thatch-health-partners-openapi.yml#GET /enrollments/{id}",
+     "openapi/_original/thatch-health-platforms-openapi-original.yml#GET /enrollments",
+     "openapi/_original/thatch-health-platforms-openapi-original.yml#GET /enrollments/{id}"
+    ]
+   },
+   "ukg-pro": {
+    "segments": [
+     "elections"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "electionId": "string",
+     "employeeId": "string",
+     "planName": "string",
+     "coverageTier": "string",
+     "effectiveDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/ukg-pro-openapi.yml#GET /benefits/v1/elections"
+    ]
+   },
+   "unum": {
+    "segments": [
+     "elections"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "electionId": "string",
+     "memberId": "string",
+     "groupId": "string",
+     "planYear": "integer",
+     "elections": "array",
+     "status": "string",
+     "submittedAt": "string",
+     "effectiveDate": "string",
+     "productType": "string",
+     "planCode": "string",
+     "coverageLevel": "string",
+     "benefitAmount": "number",
+     "waived": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/unum-hr-connect-openapi.yml#GET /enrollment/elections",
+     "openapi/_original/unum-hr-connect-openapi.yml#GET /enrollment/elections/{electionId}",
+     "openapi/_original/unum-hr-connect-openapi.yml#POST /enrollment/elections"
+    ]
+   },
+   "wagestream": {
+    "segments": [
+     "enrollments"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "employee_id": "string",
+     "requested_on": "string",
+     "enrolled_on": "string",
+     "unenrolled_on": "string",
+     "bank_sort_code": "string",
+     "bank_account_number": "string",
+     "bank_name": "string",
+     "action": "string",
+     "state": "string"
+    },
+    "evidence": [
+     "openapi/_original/wagestream-integrations-api-openapi.json#GET /enrollments",
+     "openapi/_original/wagestream-integrations-api-openapi.json#POST /enrollments",
+     "openapi/_original/wagestream-integrations-api-openapi.yml#GET /enrollments",
+     "openapi/_original/wagestream-integrations-api-openapi.yml#POST /enrollments"
+    ]
+   },
+   "yuzu-health": {
+    "segments": [
+     "coverages",
+     "coverage"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "coverageStatus": "string",
+     "eligibilitySince": "string",
+     "eligibilityUntil": "string",
+     "groupId": "string",
+     "planId": "string",
+     "subscriberId": null,
+     "memberNumber": "string",
+     "relationship": "string",
+     "alternateID": "string",
+     "fees": "array",
+     "pcpPreferences": "object",
+     "locations": "array",
+     "departments": "array",
+     "employeeClass": "string",
+     "startDate": "string",
+     "endDate": "string",
+     "member": "array",
+     "family": "array"
+    },
+    "evidence": [
+     "openapi/_original/yuzu-health-openapi-original.json#GET /v1/coverages/{coverageId}",
+     "openapi/_original/yuzu-health-openapi-original.json#GET /v2/accumulator/coverage/{coverageId}"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "401go",
+    "adp",
+    "arthur-j-gallagher",
+    "buk",
+    "cobee",
+    "color",
+    "employment-hero",
+    "finch",
+    "garner-health",
+    "gusto",
+    "justworks",
+    "kota",
+    "leo",
+    "lincoln-national",
+    "namely",
+    "nayya",
+    "noyo",
+    "onpay",
+    "onsi",
+    "paychex-developer",
+    "paylocity",
+    "plansource",
+    "remote-com",
+    "smart-pension",
+    "soda-health",
+    "sun-life",
+    "thatch",
+    "thatch-health",
+    "towers-watson",
+    "ukg-pro",
+    "ukg-ready",
+    "unum",
+    "wagestream",
+    "wellhub",
+    "workday-benefits",
+    "yuzu-health",
+    "zywave"
+   ],
+   "kebab-case": [
+    "401go",
+    "adp",
+    "buk",
+    "cobee",
+    "employment-hero",
+    "finch",
+    "garner-health",
+    "gusto",
+    "justworks",
+    "kota",
+    "lincoln-national",
+    "nayya",
+    "onpay",
+    "smart-pension",
+    "soda-health",
+    "sun-life",
+    "towers-watson",
+    "ukg-pro",
+    "wagestream",
+    "yuzu-health"
+   ],
+   "snake_case": [
+    "arthur-j-gallagher",
+    "buk",
+    "color",
+    "employment-hero",
+    "gusto",
+    "kota",
+    "namely",
+    "nayya",
+    "noyo",
+    "plansource",
+    "remote-com",
+    "smart-pension",
+    "thatch",
+    "thatch-health",
+    "ukg-ready"
+   ],
+   "other": [
+    "adp",
+    "buk",
+    "employment-hero",
+    "smart-pension",
+    "soda-health",
+    "sun-life",
+    "workday-benefits"
+   ],
+   "camelCase": [
+    "buk",
+    "employment-hero",
+    "workday-benefits",
+    "yuzu-health",
+    "zywave"
+   ],
+   "PascalCase": [
+    "adp",
+    "employment-hero",
+    "sun-life"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "401go",
+    "adp",
+    "arthur-j-gallagher",
+    "buk",
+    "cobee",
+    "color",
+    "employment-hero",
+    "finch",
+    "justworks",
+    "kota",
+    "namely",
+    "nayya",
+    "noyo",
+    "onpay",
+    "onsi",
+    "paychex-developer",
+    "plansource",
+    "remote-com",
+    "smart-pension",
+    "soda-health",
+    "sun-life",
+    "thatch",
+    "thatch-health",
+    "towers-watson",
+    "ukg-pro",
+    "ukg-ready",
+    "unum",
+    "wagestream",
+    "wellhub",
+    "zywave"
+   ],
+   "snake_case": [
+    "401go",
+    "buk",
+    "color",
+    "finch",
+    "garner-health",
+    "justworks",
+    "kota",
+    "namely",
+    "noyo",
+    "onpay",
+    "plansource",
+    "remote-com",
+    "smart-pension",
+    "soda-health",
+    "thatch",
+    "thatch-health",
+    "ukg-pro",
+    "wagestream"
+   ],
+   "camelCase": [
+    "adp",
+    "cobee",
+    "employment-hero",
+    "lincoln-national",
+    "nayya",
+    "onsi",
+    "smart-pension",
+    "towers-watson",
+    "ukg-pro",
+    "unum",
+    "workday-benefits",
+    "yuzu-health",
+    "zywave"
+   ],
+   "other": [
+    "adp",
+    "buk",
+    "namely",
+    "smart-pension",
+    "sun-life",
+    "thatch",
+    "thatch-health",
+    "zywave"
+   ],
+   "PascalCase": [
+    "buk",
+    "employment-hero",
+    "garner-health",
+    "zywave"
+   ],
+   "kebab-case": [
+    "sun-life"
+   ]
+  },
+  "pagination_param": {
+   "page": [
+    "401go",
+    "buk",
+    "color",
+    "kota",
+    "namely",
+    "nayya",
+    "noyo",
+    "plansource",
+    "remote-com",
+    "towers-watson",
+    "ukg-pro",
+    "unum",
+    "wagestream"
+   ],
+   "page_size": [
+    "401go",
+    "buk",
+    "color",
+    "employment-hero",
+    "kota",
+    "noyo",
+    "remote-com",
+    "thatch",
+    "thatch-health",
+    "zywave"
+   ],
+   "limit": [
+    "finch",
+    "justworks",
+    "namely",
+    "onpay",
+    "paychex-developer",
+    "smart-pension",
+    "towers-watson",
+    "ukg-ready",
+    "unum",
+    "wagestream"
+   ],
+   "per_page": [
+    "buk",
+    "namely",
+    "nayya",
+    "plansource",
+    "ukg-pro"
+   ],
+   "offset": [
+    "finch",
+    "noyo",
+    "paychex-developer",
+    "smart-pension",
+    "ukg-ready"
+   ],
+   "top": [
+    "adp",
+    "arthur-j-gallagher",
+    "zywave"
+   ],
+   "skip": [
+    "adp",
+    "onsi",
+    "zywave"
+   ],
+   "cursor": [
+    "color",
+    "justworks",
+    "wellhub"
+   ],
+   "count": [
+    "adp",
+    "sun-life"
+   ],
+   "after": [
+    "arthur-j-gallagher",
+    "namely"
+   ],
+   "start": [
+    "buk",
+    "onpay"
+   ]
+  },
+  "path_param": {
+   "snake_case": [
+    "401go",
+    "buk",
+    "color",
+    "employment-hero",
+    "finch",
+    "garner-health",
+    "gusto",
+    "justworks",
+    "kota",
+    "noyo",
+    "onpay",
+    "plansource",
+    "remote-com",
+    "smart-pension",
+    "soda-health",
+    "thatch",
+    "thatch-health"
+   ],
+   "lower": [
+    "adp",
+    "buk",
+    "color",
+    "employment-hero",
+    "kota",
+    "namely",
+    "noyo",
+    "onpay",
+    "onsi",
+    "plansource",
+    "smart-pension",
+    "soda-health",
+    "sun-life",
+    "thatch",
+    "thatch-health",
+    "yuzu-health",
+    "zywave"
+   ],
+   "camelCase": [
+    "adp",
+    "cobee",
+    "employment-hero",
+    "leo",
+    "nayya",
+    "onsi",
+    "paychex-developer",
+    "paylocity",
+    "towers-watson",
+    "ukg-pro",
+    "unum",
+    "yuzu-health",
+    "zywave"
+   ],
+   "kebab-case": [
+    "adp",
+    "namely",
+    "wellhub"
+   ],
+   "other": [
+    "adp"
+   ],
+   "PascalCase": [
+    "workday-benefits"
+   ]
+  },
+  "property": {
+   "lower": [
+    "buk",
+    "employment-hero",
+    "finch",
+    "kota",
+    "nayya",
+    "noyo",
+    "plansource",
+    "smart-pension",
+    "thatch",
+    "thatch-health",
+    "towers-watson",
+    "unum",
+    "wagestream",
+    "yuzu-health",
+    "zywave"
+   ],
+   "snake_case": [
+    "buk",
+    "finch",
+    "kota",
+    "noyo",
+    "plansource",
+    "smart-pension",
+    "thatch",
+    "thatch-health",
+    "wagestream"
+   ],
+   "camelCase": [
+    "employment-hero",
+    "lincoln-national",
+    "nayya",
+    "towers-watson",
+    "ukg-pro",
+    "unum",
+    "yuzu-health",
+    "zywave"
+   ]
+  }
+ }
+}

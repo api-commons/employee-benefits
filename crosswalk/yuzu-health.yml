@@ -1,0 +1,34 @@
+provider: yuzu-health
+apis_io: https://apis.io/providers/yuzu-health/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  benefit_plan:
+    path_segment:
+    - plan
+    - plans
+    - benefits
+    properties:
+      id: id
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/yuzu-health-openapi-original.json#DELETE /v1/plans/{planId}
+    - openapi/_original/yuzu-health-openapi-original.json#GET /v1/claims/plan
+    - openapi/_original/yuzu-health-openapi-original.json#GET /v1/claims/plan/{planClaimId}
+    - openapi/_original/yuzu-health-openapi-original.json#GET /v2/designs/{planDesignId}/benefits
+    - openapi/_original/yuzu-health-openapi-original.json#POST /v1/claims/plan/{planId}
+  enrollment:
+    path_segment:
+    - coverages
+    - coverage
+    properties:
+      id:
+      - id
+      - planId
+      employee: member
+      start_date: startDate
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/yuzu-health-openapi-original.json#GET /v1/coverages/{coverageId}
+    - openapi/_original/yuzu-health-openapi-original.json#GET /v2/accumulator/coverage/{coverageId}

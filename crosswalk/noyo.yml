@@ -1,0 +1,22 @@
+provider: noyo
+apis_io: https://apis.io/providers/noyo/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  benefit_plan:
+    path_segment:
+    - plans
+    properties:
+      id: id
+      plan_type:
+      - line_of_coverage
+      - plan_type
+      name: name
+      start_date: effective_start_date
+      created_at: created
+      status: status
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/noyo-fulfillment-openapi.json#GET /api/v1/group_enrollments/{enrollment_id}/plans
+    - openapi/_original/noyo-fulfillment-openapi.json#GET /api/v1/groups/{group_id}/plans
+    - openapi/_original/noyo-fulfillment-openapi.json#GET /api/v1/plans/{plan_id}

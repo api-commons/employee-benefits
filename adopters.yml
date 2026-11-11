@@ -1,0 +1,95 @@
+context: employee-benefits
+generated: '2026-11-11'
+adopters:
+- provider: buk
+  apis_io: https://apis.io/providers/buk/
+  crosswalk: crosswalk/buk.yml
+  concepts:
+  - benefit_plan
+- provider: employment-hero
+  apis_io: https://apis.io/providers/employment-hero/
+  crosswalk: crosswalk/employment-hero.yml
+  concepts:
+  - benefit_plan
+- provider: finch
+  apis_io: https://apis.io/providers/finch/
+  crosswalk: crosswalk/finch.yml
+  concepts:
+  - benefit_plan
+- provider: kota
+  apis_io: https://apis.io/providers/kota/
+  crosswalk: crosswalk/kota.yml
+  concepts:
+  - benefit_plan
+- provider: lincoln-national
+  apis_io: https://apis.io/providers/lincoln-national/
+  crosswalk: crosswalk/lincoln-national.yml
+  concepts:
+  - enrollment
+- provider: nayya
+  apis_io: https://apis.io/providers/nayya/
+  crosswalk: crosswalk/nayya.yml
+  concepts:
+  - benefit_plan
+  - enrollment
+- provider: noyo
+  apis_io: https://apis.io/providers/noyo/
+  crosswalk: crosswalk/noyo.yml
+  concepts:
+  - benefit_plan
+- provider: plansource
+  apis_io: https://apis.io/providers/plansource/
+  crosswalk: crosswalk/plansource.yml
+  concepts:
+  - enrollment
+- provider: smart-pension
+  apis_io: https://apis.io/providers/smart-pension/
+  crosswalk: crosswalk/smart-pension.yml
+  concepts:
+  - benefit_plan
+- provider: sun-life
+  apis_io: https://apis.io/providers/sun-life/
+  crosswalk: crosswalk/sun-life.yml
+  concepts:
+  - enrollment
+- provider: thatch
+  apis_io: https://apis.io/providers/thatch/
+  crosswalk: crosswalk/thatch.yml
+  concepts:
+  - enrollment
+- provider: thatch-health
+  apis_io: https://apis.io/providers/thatch-health/
+  crosswalk: crosswalk/thatch-health.yml
+  concepts:
+  - enrollment
+- provider: towers-watson
+  apis_io: https://apis.io/providers/towers-watson/
+  crosswalk: crosswalk/towers-watson.yml
+  concepts:
+  - benefit_plan
+- provider: ukg-pro
+  apis_io: https://apis.io/providers/ukg-pro/
+  crosswalk: crosswalk/ukg-pro.yml
+  concepts:
+  - enrollment
+- provider: unum
+  apis_io: https://apis.io/providers/unum/
+  crosswalk: crosswalk/unum.yml
+  concepts:
+  - enrollment
+- provider: wagestream
+  apis_io: https://apis.io/providers/wagestream/
+  crosswalk: crosswalk/wagestream.yml
+  concepts:
+  - enrollment
+- provider: yuzu-health
+  apis_io: https://apis.io/providers/yuzu-health/
+  crosswalk: crosswalk/yuzu-health.yml
+  concepts:
+  - benefit_plan
+  - enrollment
+- provider: zywave
+  apis_io: https://apis.io/providers/zywave/
+  crosswalk: crosswalk/zywave.yml
+  concepts:
+  - benefit_plan

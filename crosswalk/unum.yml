@@ -1,0 +1,18 @@
+provider: unum
+apis_io: https://apis.io/providers/unum/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  enrollment:
+    path_segment:
+    - elections
+    properties:
+      employee: memberId
+      status: status
+      start_date: effectiveDate
+      plan_code: planCode
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/unum-hr-connect-openapi.yml#GET /enrollment/elections
+    - openapi/_original/unum-hr-connect-openapi.yml#GET /enrollment/elections/{electionId}
+    - openapi/_original/unum-hr-connect-openapi.yml#POST /enrollment/elections

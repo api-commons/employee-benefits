@@ -1,0 +1,13 @@
+provider: lincoln-national
+apis_io: https://apis.io/providers/lincoln-national/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  enrollment:
+    path_segment:
+    - enrollment
+    properties:
+      start_date: effectiveDate
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/lincoln-national-openapi.yml#POST /enrollment

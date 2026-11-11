@@ -1,0 +1,22 @@
+provider: plansource
+apis_io: https://apis.io/providers/plansource/
+context: employee-benefits
+generated: '2026-11-11'
+concepts:
+  enrollment:
+    path_segment:
+    - coverage
+    - coverages
+    properties:
+      id:
+      - id
+      - plan_id
+      - dependent_id
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/plansource-admin-api-openapi-original.json#GET /coverage/{coverage_id}
+    - openapi/_original/plansource-admin-api-openapi-original.json#GET /coverages
+    - openapi/_original/plansource-admin-api-openapi-original.json#POST /coverage
+    - openapi/_original/plansource-admin-api-openapi-original.json#POST /coverages
+    - openapi/_original/plansource-admin-api-openapi-original.json#PUT /coverage/{coverage_id}

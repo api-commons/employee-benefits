@@ -1,0 +1,150 @@
+openapi: 3.1.0
+info:
+  title: Employee Benefits (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Employee Benefits interface, distilled from the harvested OpenAPI of 37 providers in
+    the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /benefit-plans:
+    get:
+      operationId: listBenefitPlans
+      summary: List benefit plans
+      tags:
+      - Benefit Plans
+      x-commons-tier: core
+      x-commons-share: 0.9
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/BenefitPlan'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createBenefitPlan
+      summary: Create a benefit plan
+      tags:
+      - Benefit Plans
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /benefit-plans/{benefit_plan_id}:
+    parameters:
+    - $ref: '#/components/parameters/benefit_plan_id'
+    get:
+      operationId: getBenefitPlan
+      summary: Get a benefit plan
+      tags:
+      - Benefit Plans
+      x-commons-tier: core
+      x-commons-share: 0.9
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /enrollments:
+    get:
+      operationId: listEnrollments
+      summary: List enrollments
+      tags:
+      - Enrollments
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Enrollment'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createEnrollment
+      summary: Create an enrollment
+      tags:
+      - Enrollments
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /enrollments/{enrollment_id}:
+    parameters:
+    - $ref: '#/components/parameters/enrollment_id'
+    get:
+      operationId: getEnrollment
+      summary: Get an enrollment
+      tags:
+      - Enrollments
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+components:
+  schemas:
+    BenefitPlan:
+      $ref: ./schema/benefit_plan.json
+    Enrollment:
+      $ref: ./schema/enrollment.json
+  parameters:
+    benefit_plan_id:
+      name: benefit_plan_id
+      in: path
+      required: true
+      schema:
+        type: string
+    enrollment_id:
+      name: enrollment_id
+      in: path
+      required: true
+      schema:
+        type: string
